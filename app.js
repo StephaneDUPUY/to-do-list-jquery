@@ -11,7 +11,7 @@ $(document).ready(function () { // wait end of load to apply script
             $(".delete").on('click', function () { // target on .delete class and listen on click event
                 $(this).parent().remove(); // remove parent of X button (remove li element), "this" is the current element targetted (button)
             });
-            $$("li").on('click', function () {
+            $("li").on('click', function () {
                 $(this).css({'backgroundColor': 'orange'});
             });
             $("li").on('dblclick', function () {
