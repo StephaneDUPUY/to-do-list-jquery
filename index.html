@@ -2,15 +2,23 @@
 <html>
     <head>
         <title>Ma liste de tâches</title>
-        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1>Ma liste de tâches</h1>
-        <input type="text" placeholder="Nouvelle tâche" />
-        <button id="add">Ajouter</button>
-        <ul class="list-group" id="list"></ul>
+        <div class="d-flex flex-column">
+            <h1 class="align-self-center">Ma liste de tâches</h1>
+            <div class="input-group justify-content-center">
+                <div class="d-inline px-2">
+                    <input class="border border-success rounded-lg" type="text" placeholder="Nouvelle tâche" />
+                </div>
+                <div lass="d-inline px-2">
+                    <button type="button" class="btn btn-success btn-sm" id="add">Ajouter</button>
+                </div>
+            </div>
+            <ul class="list-group" id="list"></ul>
+        </div>
 
         <script src="app.js"></script>
 
