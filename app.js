@@ -11,6 +11,12 @@ $(document).ready(function () { // wait end of load to apply script
             $(".delete").on('click', function () { // target on .delete class and listen on click event
                 $(this).parent().remove(); // remove parent of X button (remove li element), "this" is the current element targetted (button)
             });
+            $$("li").on('click', function () {
+                $(this).css({'backgroundColor': 'orange'});
+            });
+            $("li").on('dblclick', function () {
+                $(this).css({'backgroundColor': 'lime'});
+            });
         } else {
             alert('Merci d\'indiquer le nom de la tâche à ajouter à votre liste'); // popup message on filed empty when list added
             console.log('champ non rempli');
@@ -18,5 +24,12 @@ $(document).ready(function () { // wait end of load to apply script
     });
     $(".delete").on('click', function () { // target on .delete class and listen on click event
         $(this).parent().remove(); // remove parent of X button (remove li element), "this" is the current element targetted (button)
+    });
+
+    $("li").on('click', function () {
+        $(this).css({'backgroundColor': 'orange'});
+    });
+    $("li").on('dblclick', function () {
+        $(this).css({'backgroundColor': 'lime'});
     });
 });
