@@ -16,4 +16,7 @@ $(document).ready(function () { // wait end of load to apply script
             console.log('champ non rempli');
         }
     });
+    $(".delete").on('click', function () { // target on .delete class and listen on click event
+        $(this).parent().remove(); // remove parent of X button (remove li element), "this" is the current element targetted (button)
+    });
 });
